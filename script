@@ -1,0 +1,8 @@
+local frame = script.Parent
+local inputBox = frame:WaitForChild("TextBox")
+local submitBtn = frame:WaitForChild("SubmitButton")
+
+submitBtn.MouseButton1Click:Connect(function()
+	local input = inputBox.Text
+	print("Player typed:", input)
+end)
